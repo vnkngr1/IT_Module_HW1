@@ -139,24 +139,6 @@ std::string addBinaryFloatingPoint(const std::string& num1, const std::string& n
     return integerResult + "." + fractionResult;
 }
 
-std::string addBinary(const std::string& a, const std::string& b) {
-    std::string result = "";
-    int carry = 0;
-    int i = a.size() - 1, j = b.size() - 1;
-
-    while (i >= 0 || j >= 0 || carry) {
-        int sum = carry;
-        if (i >= 0) sum += a[i--] - '0';
-        if (j >= 0) sum += b[j--] - '0';
-
-        result += (sum % 2) + '0';
-        carry = sum / 2;
-    }
-
-    reverse(result.begin(), result.end());
-    return result;
-}
-
 std::string multiplyBinary(const std::string& num1, const std::string& num2) {
 
     int point = (num1.size() - num1.find('.')) + (num2.size() - num2.find('.')) - 2;
@@ -171,7 +153,7 @@ std::string multiplyBinary(const std::string& num1, const std::string& num2) {
             std::string temp = new_num1;
             // Добавляем необходимое количество нулей в конец
             temp.append(new_num2.size() - 1 - i, '0');
-            result = addBinary(result, temp);
+            result = addBinaryIntegers(result, temp);
         }
     }
 

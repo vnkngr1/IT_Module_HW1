@@ -17,7 +17,7 @@ void task6() {
     double result10 = ((num1 + (num2 / num3)) * num4) - (num5 * num6);
 
     //В шестнадцатеричную систему
-    std::string result16 = from_ten_to_n(result10, 16);
+    std::string result16 = "-" + from_ten_to_n(-1 * result10, 16);
 
     std::cout << "Задание 6 - пройдено" << std::endl;
 }

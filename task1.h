@@ -9,11 +9,8 @@
 void task1() {
     std::string num = "100101110110.111";
     double num10 = from_n_to_ten(num, 2);
-    std::cout << num10 << std::endl;
     std::string num8 = from_ten_to_n(num10, 8);
-    std::cout << num8 << std::endl;
     std::string num16 = from_m_to_n(num8, 8, 16);
-    std::cout << num16 << std::endl;
     std::string num2 = from_m_to_n(num16, 16, 2);
     if (num2 != num) {
         std::cout << "Задание 1 - ошибка" << std::endl;

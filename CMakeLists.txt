@@ -10,4 +10,5 @@ add_executable(module_hw1 main.cpp
         main_transformations.h
         task4.h
         task3.h
+        task5.h
 )

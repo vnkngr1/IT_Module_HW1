@@ -1,0 +1,3 @@
+/Users/ivangarsin/Downloads/module_hw1/cmake-build-debug/CMakeFiles/module_hw1.dir
+/Users/ivangarsin/Downloads/module_hw1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ivangarsin/Downloads/module_hw1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
